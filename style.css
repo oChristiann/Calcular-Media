@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 200px;
+    align-items: center;
+}
+
+#bttn-1{
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgba(22, 219, 22, 0.89);
+    color: white;
+}
+
+#bttn-2{
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+}
+
+h2{
+    margin: auto;
+}

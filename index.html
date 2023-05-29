@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Média </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2> Calcule a sua média! </h2>
+    <br>
+    <input type="number" id="n1" placeholder="Digite a primeira nota:" style="height: 30px; width: 190px; ">
+    <br>
+    <input type="number" id="n2" placeholder="Digite a primeira segunda:" style="height: 30px; width: 190px; ">
+    <br>
+    <input type="number" id="n3" placeholder="Digite a primeira terceira:" style="height: 30px; width: 190px; ">
+    <br>
+
+    <button onclick="calcular()" id="bttn-1"> Calcular Média </button>
+    <br>
+    <button onclick="limparInputs()" id="bttn-2"> Refazer cálculo </button>
+
+    <script>
+        function calcular() {
+            var n1 = document.getElementById("n1").value
+            var n2 = document.getElementById("n2").value
+            var n3 = document.getElementById("n3").value
+
+            var media = (Number(n1) + Number(n2) + Number(n3)) / 3
+
+            alert(`Sua média é: ${media}`)
+
+            if (media >= 6) {
+                alert("Você foi aprovado!")
+            } else {
+                alert("Você foi reprovado!")
+            }
+        }
+
+        function limparInputs(){
+            document.getElementById("n1").value = "";
+            document.getElementById("n2").value = "";
+            document.getElementById("n3").value = "";
+        }
+    </script>
+</body>
+
+</html>
